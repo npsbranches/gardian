@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gilroy';
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.navbar {
+    background-image: url('../images/navbar-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 66px;
+}
+
+.navbar .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+
+}
+
+.first-menu {
+    display: flex;
+    align-items: center;
+}
+
+.first-menu ul {
+    display: flex;
+}
+
+.first-menu ul li {
+    margin: 0 30px;
+}
+
+.first-menu ul li a {
+    color: #000;
+    font-weight: 800;
+    transition: 0.2s
+}
+
+.first-menu ul li a:hover {
+    color: #064dad;
+}
+
+.header-phone {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 800;
+}
+
+.header-phone span {
+    margin-left: 10px;
+}
+
+.header-phone:hover img {
+    animation: phone-animation 1s infinite;
+}
+
+@keyframes phone-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.second-menu {
+    padding: 15px 0 50px 0;
+}
+
+.second-menu .wrapper ul {
+    display: flex;
+    justify-content: center;
+}
+
+.second-menu ul li {
+    border-right: 1px solid #000;
+    padding: 0 15px;
+}
+
+.second-menu ul li:last-child {
+    border-right: none;
+}
+
+.second-menu ul li a {
+    font-size: 22px;
+    color: #000;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home-about {
+    background-image: url('../images/home-about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+}
+
+.home-about h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #064dad;
+}
+
+.home-about p {
+    font-size: 30px;
+  
+}
