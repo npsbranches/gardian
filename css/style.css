@@ -167,3 +167,118 @@ textarea {
     font-size: 30px;
   
 }
+
+.showcase {
+    background: url('../images/showcase-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 100px;
+}
+
+.showcase h2 {
+    font-size: 42px;
+    font-weight: 800px;
+    color: #064dad;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.showcase-slider {
+    overflow: hidden;
+}
+.showcase-slide {
+    position: relative;
+}
+.showcase-slide .wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+.showcase-photo {
+    width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.showcase-photo img {
+    width: 100%;
+    object-fit: contain;
+}
+.showcase-info {
+    background: url('../images/showcase-info-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+    margin-left: 50px;
+    height: 470px;
+    position: relative;
+    z-index: 1;
+}
+
+.showcase-title {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.showcase-subtitle {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.showcase-values {
+    margin-top: 30px;
+}
+.showcase-value {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.showcase-value img {
+    width: 35px;
+}
+.showcase-value span {
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.showcase-price {
+    background: #064dad;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+}
+
+.showcase-price span {
+   font-size: 38px;
+   padding-left: 20px;
+}
+
+.showcase .wrapper::after {
+    background: #064dad;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: block;
+    content: '';
+    left: 0;
+    bottom: 44px;
+    z-index: 0;
+}
+
+.showcase .slick-dots {
+    position: unset;
+    margin-top: 30px;
+}
+
+.showcase .slick-dots li button:before {
+    font-size: 16px;
+    color: #064dad;
+}
+  
