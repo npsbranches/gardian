@@ -9,6 +9,10 @@ body {
     font-family: 'Gilroy';
 }
 
+body.fixed {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }

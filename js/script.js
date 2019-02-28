@@ -9,11 +9,13 @@ $('.btn-bars').click(function(){
     $('.mobile-menu').toggleClass('toggle');
     $('.btn-bars').toggleClass('fixed');
     $('.logo').toggleClass('fixed');
+    $('body').toggleClass('fixed');
 })
 
 $('.mobile-menu a').click(function(){
     $('.mobile-menu').toggleClass('toggle');
     $('.btn-bars').toggleClass('fixed');
     $('.logo').toggleClass('fixed');
+    $('body').toggleClass('fixed');
 })
 
