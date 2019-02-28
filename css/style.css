@@ -374,13 +374,13 @@ textarea {
 
 .showcase .prev {
     position: absolute;
-    left: 47%;
+    left: calc(50% - 30px);
     /* top: 40%; */
     bottom: -40px;
 }
 .showcase .next {
     position: absolute;
-    right: 47%;
+    right: calc(50% - 30px);
     /* top: 40%; */
     bottom: -40px;
 }
@@ -722,4 +722,8 @@ textarea {
         font-size: 20px;
         line-height: unset;
     }
+}
+
+@media screen and (max-width: 576px) {
+    
 }
