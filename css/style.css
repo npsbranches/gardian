@@ -570,6 +570,10 @@ textarea {
     padding-left: 15px;
 }
 
+.product-price span {
+    line-height: 30px;
+}
+
 .product-value {
     display: flex;
     align-items: center;
@@ -722,8 +726,29 @@ textarea {
         font-size: 20px;
         line-height: unset;
     }
+    .product::after {
+        display: none;
+    }
+    
+    .product-info {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-photo {
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        margin-left: 0;
+    }
+    .product-price {
+        position: relative;
+        margin-top: 20px;
+    }
 }
